@@ -1,5 +1,3 @@
-*.gitignore
-bin
-out
-*.idea
 *.iml
+*.idea
+out
