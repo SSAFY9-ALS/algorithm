@@ -29,8 +29,9 @@ git commit -m "[플랫폼] 문제이름 / 난이도 / 걸린시간"
   - [SEA] 삼성SW Expert Academy
   - [ETC] 그외
 
+
 ## PR 규칙
-- PR제목 : 이름 / 주차 / 몇 문제
+- PR제목 : 이름 / 날짜 / 몇 문제
 - comment 자유
 
 ---
