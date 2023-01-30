@@ -13,10 +13,7 @@
 ## 일정
 **주 2회 - 화요일 오후 9시, 토요일 오전 10시**
 - 토요일은 격주에 한번 모의 코딩테스트 진행
-
-## 알고리즘
-[알고리즘 공부 순서]
-<img width="75%" src="https://user-images.githubusercontent.com/55655743/215365205-cdc91184-d708-46cd-9594-8abd8d7ed8ec.png">
+<img width="80%" src="https://user-images.githubusercontent.com/55655743/215365205-cdc91184-d708-46cd-9594-8abd8d7ed8ec.png">
 
 ## commit 규칙
 1. commit 메세지 규칙
