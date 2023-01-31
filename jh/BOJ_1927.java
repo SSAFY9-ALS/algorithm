@@ -12,7 +12,7 @@ public class BOJ_1927 {
 		for(int tc = 0; tc < T; tc++) {
 			n = sc.nextInt();
 			if(n == 0) { // 0이 입력됐을 때
-				if(heap.size() == 0) // size가 0이면
+				if(heap.size() == 0) // heap의 size가 0이면
 					System.out.println("0"); // 0 출력
 				else // 아니면
 					System.out.println(heap.poll()); // 가장 작은 값 출력
