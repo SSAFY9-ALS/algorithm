@@ -17,38 +17,22 @@ public class Main {
 		int answer = 0;
 		for (int i = 0; i < s.length(); i++) {
 			String temp = Character.toString(s.charAt(i));
-			if (temp.equals("(")) {
+			if (temp.equals("(")) { // 여는 괄호면 스택에 저장
 				stack.push(temp);
-			} else if (temp.equals(")")) {
+			} else if (temp.equals(")")) { // 닫힌 괄호일 때 실행
 				stack.pop();
 				if (s.charAt(i - 1) == '(') {
+					// 레이저면 실행
 					answer += stack.size();
 				} else if (s.charAt(i - 1) == ')') {
+					// 쇠막대기의 끝점이면 실행
 					answer++;
 				}
 			}
 
 		}
-		
-		System.out.println(answer);
 
-//		String pre_s = stack.pop();;
-//		while (!stack.empty()) {
-//			String temp = stack.pop();
-//			if (s == "(") {
-//				if (pre_s == "(") {
-//					num++;
-//				} else if (pre_s == ")") {
-//					
-//				}
-//			} else if (s == ")") {
-//				if (pre_s == "(") {
-//					answer += num;
-//				} else if (pre_s == ")") {
-//
-//				}
-//			}
-//		}
+		System.out.println(answer);
 
 	}
 
