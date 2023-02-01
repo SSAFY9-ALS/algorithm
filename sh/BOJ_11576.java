@@ -16,7 +16,6 @@ public class BOJ_11576 {
         // 정이가 사용하는 진법
         int B = Integer.parseInt(st.nextToken());
 
-        // 자리수의 개수
         int m = Integer.parseInt(br.readLine());
 
         st = new StringTokenizer(br.readLine());
