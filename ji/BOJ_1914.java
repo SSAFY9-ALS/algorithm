@@ -1,11 +1,11 @@
 package net.acmicpc;
 
 import java.math.BigInteger;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
-/** 11:13 11:56 + 17분 */
+/** 하노이 탑 / 실버 1 / 60분
+ *  https://www.acmicpc.net/problem/1914
+ */
 public class BOJ_1914 {
 	public static void move(int st, int ar) {
 		System.out.println(st + " " + ar);
@@ -29,5 +29,3 @@ public class BOJ_1914 {
 		}
 	}
 }
-
-// https://www.acmicpc.net/problem/1914
