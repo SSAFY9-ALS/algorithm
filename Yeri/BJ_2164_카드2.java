@@ -7,6 +7,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
 
+/**
+ * 카드2 / 실버4 / 20분
+ * https://www.acmicpc.net/problem/2164
+ */
 public class BJ_2164_카드2 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -26,14 +30,7 @@ public class BJ_2164_카드2 {
             }
             size = arr.size();      //초기화
 
-
-
-//            n = arr.get(size-1);
-
             while (size > 1) {
-//                for (int i = 0; i < size; i += 2) {
-//                    arr.remove(i);
-//                }
                 if(size%2!=0){
                     for (int i = size-1; i >=0; i -= 2) {
                         arr.remove(i);
@@ -48,7 +45,6 @@ public class BJ_2164_카드2 {
                     }
                 }
                 size = arr.size();
-//                n = arr.get(size-1);
             }
             System.out.println(arr.get(0));
         }else {
