@@ -28,5 +28,6 @@ public class BOJ_16992 {
 		int n = Integer.parseInt(br.readLine());
 		sum(n, 0, 0);
 		System.out.println(ans);
+		
 	}
 }
