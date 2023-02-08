@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.StringTokenizer;
 
 /**
- * 덱 / 실버5 / 10분
+ * 덱 / 실버4 / 10분
  */
 public class BJ_10866_덱 {
 
