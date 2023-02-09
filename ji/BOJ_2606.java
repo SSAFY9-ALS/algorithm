@@ -1,7 +1,11 @@
 package net.acmicpc;
 
 import java.util.Scanner;
-
+/**
+ * 바이러스 / 실버 3 / 14분
+ * @author 민정인
+ * https://www.acmicpc.net/problem/2606
+ */
 public class BOJ_2606 {
 	static int[][] arr;		// 연결 정보 배열
 	static int m;			// 간선의 수 정보
