@@ -51,4 +51,5 @@ public class q10986 {
 		
 		System.out.println(result);
 	}
+	
 }
