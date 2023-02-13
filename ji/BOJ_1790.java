@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+
 /**
  * 수 이어 쓰기 2 / 골드 5 / 80
  * @author 민정인
