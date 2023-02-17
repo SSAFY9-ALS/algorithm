@@ -30,7 +30,7 @@ public class BOJ_14891 {
 		}
 	}
 	
-	// 왼쪽 톱니바퀴 확인 메서드
+	// 왼쪽 톱니바퀴를 확인하는 메서드
 	static void isLeftRotate(int now, int next, int d) {
 		boolean flag = next > 0 && gear.get(now).get(6) != gear.get(next).get(2); // 현재 것에 연결된 왼쪽 톱니바퀴가 회전할 수 있는지 확인하는 변수
 		
@@ -40,7 +40,7 @@ public class BOJ_14891 {
 			doRotate(next, d); // 회전을 실행하는 함수 호출
 	}
 	
-	// 오른쪽 톱니바퀴 확인 메서드
+	// 오른쪽 톱니바퀴를 확인하는 메서드
 	static void isRightRotate(int now, int next, int d) {
 		boolean flag = next < 5 && gear.get(now).get(2) != gear.get(next).get(6); // 현재 것에 연결된 오른쪽 톱니바퀴가 회전할 수 있는지 확인하는 변수
 		
@@ -50,7 +50,7 @@ public class BOJ_14891 {
 			doRotate(next, d); // 회전을 실행하는 함수 호출
 	}
 	
-	// 톱니바퀴 회전을 위한 메서드
+	// 톱니바퀴 회전 기능 구현 메서드
 	static void rotateGear(int num, int d) {
 		int newD = d > 0? -1: 1; // 현재 톱니바퀴에 연결된 다른 톱니바퀴가 회전 가능할 때, 회전해야 될 방향
 		isLeftRotate(num, num - 1, newD); // 왼쪽 톱니바퀴가 회전할 수 있는지 확인
