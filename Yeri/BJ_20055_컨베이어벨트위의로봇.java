@@ -5,6 +5,10 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 
+/**
+ * 컨베이어 벨트 위의 로봇 / 골드5 / 1시간반
+ * https://www.acmicpc.net/problem/20055
+ */
 public class BJ_20055_컨베이어벨트위의로봇 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -19,7 +23,6 @@ public class BJ_20055_컨베이어벨트위의로봇 {
         st = new StringTokenizer(br.readLine());
         for (int i = 0; i < 2 * N; i++) {
             A[i] = Integer.parseInt(st.nextToken());
-//            robot[i].add(false);
         }
 
         while(count<K){
@@ -31,21 +34,15 @@ public class BJ_20055_컨베이어벨트위의로봇 {
             }
             A[0] = temp;
             robot[0] = false;
-//            A.add(0,A.get(2*N-1));
-//            A.remove(2*N);
-//            robot.add(0,false);
-//            robot.remove(N);
 
             //로봇 이동
+            robot[N-1]= false;
             for(int i = N-1; i > 0;i--){
-                if(robot[i-1]&&!robot[i]&&A[i-1]!=0){
+                if(robot[i-1]&&!robot[i]&&A[i]!=0){
                     robot[i] = true;
-//                    .set(i,true);
                     robot[i-1] = false;
-//                    .set(i-1,false);
                     A[i]--;
-//                    .set(i, A.get(i)-1);
-                    if(A[i]==0)
+                    if(A[i]<=0)
                         count++;
                 }
             }
@@ -53,11 +50,10 @@ public class BJ_20055_컨베이어벨트위의로봇 {
             if(A[0]!=0){
                 robot[0] = true;
                 A[0]--;
-//                .set(0, A.get(0)-1);
-                if(A[0]==0)
+                if(A[0]<=0)
                     count++;
-//                result++;
             }
+
             result++;
         }
         System.out.println(result);
