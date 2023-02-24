@@ -1,8 +1,14 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.HashMap;
 import java.util.StringTokenizer;
 
+/**
+ * 가희와키워드 / 실버2 / 30분
+ * @author 소수현
+ * https://www.acmicpc.net/problem/22233
+ */
 
 public class BJ_22233_가희와키워드 {
 	public static void main(String[] args) throws IOException {
@@ -16,30 +22,27 @@ public class BJ_22233_가희와키워드 {
 		int M = Integer.parseInt(st.nextToken());
 		
 		// 메모장에 적은 키워드
-		String[] memos = new String[N];
-		boolean[] isHere = new boolean[N];
+		HashMap<String, Boolean> memos = new HashMap<>();
+		
+		
 		for (int n = 0; n < N; n++) {
-			memos[n] = br.readLine();
+			memos.put(br.readLine(), false);
 		}
 		
 		// 가희가 쓴 글과 관련된 키워드
+		int count = 0;
 		for (int m = 0; m < M; m++) {
-			System.out.println("test");
-			int count = 0;
 			st = new StringTokenizer(br.readLine(), ",");
 			while(st.hasMoreElements()) {
 				String temp = st.nextToken();
-				for (int n = 0; n < memos.length; n++) {
-					if(memos[n].equals(temp) || isHere[n]) {
-						isHere[n] = true;
-						count++;
-					}
+				
+				if(memos.containsKey(temp) && !memos.get(temp)) {
+					memos.put(temp, true);
+					count++;
 				}
 			}
-//			count = N - count;
-			sb.append(count).append("\n");
+			sb.append(N-count).append("\n");
 		}
 		System.out.println(sb);
 	}
 }
-
