@@ -40,7 +40,7 @@ public class BOJ_2179 {
 					break; // 최대 길이만 탐색하기 때문에 이 접두사가 map에 등장하면 이후의 것 볼 필요가 없음
 				}
 				else { // 아직 등장하지 않은 단어면
-					map.put(sub, new Object[] {1, sb.toString()}); // map에 add -> 두 번째 등장한 단어는 아직 모르기 때문에 현재 단어만 넣어줌
+					map.put(sub, new Object[] {1, sb.toString()}); // map에 추가 -> 두 번째 등장한 단어는 아직 모르기 때문에 현재 단어만 넣어줌
 				}
 			}
 		}
