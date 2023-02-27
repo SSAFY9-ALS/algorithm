@@ -22,7 +22,7 @@ public class BOJ_1253 {
 		
 		int result = 0; // 결과 변수
 		int search, start, end, sum;
-		for(int i = 0; i < n; i++) {
+		for(int i = 0; i < n; i++) { // 모든 수를 탐색
 			search = nums[i]; // 두 수의 합으로 나타내고 싶은 값
 			start = 0; // 시작 인덱스 초기화
 			end = n-1; // 끝 인덱스 초기화
