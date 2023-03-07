@@ -25,7 +25,7 @@ public class BOJ_17821 {
 		int out = 0, now = start, p;
 		boolean one = false, two = false, three = false;
 		
-		while(out != 3) { // 삼진 아웃이 아닐 때
+		while(out != 3) { // 3 아웃이 아닐 때
 			p = permutation[now]; // 현재 타석에 올라온 타자
 			
 			// 홈런을 쳤을 때
