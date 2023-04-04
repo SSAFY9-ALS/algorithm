@@ -8,7 +8,7 @@ import java.util.*;
  * @author 민정인
  * https://www.acmicpc.net/problem/1202
  */
-
+ 
 public class BOJ_1202 {
 	static class Jew {	// 보석 정보 클래스
 		int w;
