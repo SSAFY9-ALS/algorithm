@@ -104,6 +104,8 @@ public class Main {
 						q.offer(new Pair(lx, ly, temp.time + 1));
 						visited[lx][ly].result = true;
 						visited[lx][ly].time = temp.time + 1;
+						// 큐에 방문한 좌표 및 걸린 시간을 넣고
+						// 방문 기록 저장
 					}
 				}
 			}
