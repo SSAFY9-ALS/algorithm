@@ -5,8 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BOJ_21941 {
-
-    class str{
+    static class str{
         String s;
         int cost;
 
