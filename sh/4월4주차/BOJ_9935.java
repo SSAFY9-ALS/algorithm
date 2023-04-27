@@ -3,6 +3,9 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Stack;
 
+/*
+ replace를 사용해서 같은 문자열이 있으면 제거하는 방법 사용 -> 문자열의 길이로 인하 메모리 초과
+*/
 public class BOJ_9935 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
